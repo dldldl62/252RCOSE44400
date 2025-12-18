@@ -1,0 +1,5 @@
+# List the required libraries here.
+textblob
+nltk
+boto3
+requests
