@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frontend Service v2</title>
+</head>
+<body>
+    <h1>Frontend Service v2</h1>
+
+    <h2>Current Message:</h2>
+    <p id="current-message">{{ current_message }}</p>
+
+    {% if timestamp %}
+    <h2>Last updated at:</h2>
+    <p>{{ timestamp }}</p>
+    {% endif %}
+
+    <h2>Update Message</h2>
+    <form action="/update" method="post">
+        <input type="text" name="new_message" placeholder="Type new message" required>
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>
+
